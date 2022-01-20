@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Felipe | Portfólio</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script data-main="libs/main" src="libs/require.js"></script>
+  </head>
+  <body>
+    <div class="">
+      <nav>
+        <h1>Portfólio</h1>
+        <div class="nav-links">
+          <a href="#habilities">Habilidades</a>
+          <a href="#certificados">Certificados</a>
+          <a href="#projetos">Projetos</a>
+        </div>
+      </nav>
+      <div class="content">
+        <div class="content-text">
+          <h2>SEJA BEM VINDO!</h2>
+          <h1>Sou Felipe Alves</h1>
+          <p>Desenvolvedor Full Stack, há mais de X anos.</p>
+		  <p>Abaixo descrevi um pouco das minhas habilidades como desenvolvedor.</p>
+
+          <button class="contact-linkedin">
+            <a
+              href="https://www.linkedin.com/in//"
+              target="_blank"
+              >Linkedin</a
+            >
+          </button>
+          <button class="contact-whatsapp">
+            <a
+              href="https://api.whatsapp.com/send?phone=5562999999999"
+              target="_blank"
+              >Entrar em contato</a
+            >
+          </button>
+        </div>
+        <img src="assets/img/eu.png" alt="" />
+      </div>
+
+      <div id="habilities">
+        <h1 class="subtitle">Habilidades</h1>
+        <div class="projects-cards-container">
+          <div class="projects-cards" onclick="abrirConhecimentos('JAVA')">
+            <h1>JAVA</h1>
+          </div>          
+        </div>        
+      </div>
+
+      <div id="certificados">
+        <h1 class="subtitle">Certificados</h1>
+        <div class="projects-cards-container">
+          <div class="projects-cards" onclick="abrirCertificados('JAVA')">
+            <h1>JAVA</h1>
+          </div>          
+        </div>
+      </div>
+
+      <div id="projetos">
+        <h1 class="subtitle">Projetos</h1>
+        <div class="projects-cards-container">
+          <div class="projects-cards">
+            <h4>Em breve</h4>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <h2>Desenvolvido por Felipe Alves Silva</h2>
+        <div class="social-medias">
+          <a class="tooltip" data-tooltip="(62) 99999-9999">
+            <img src="assets/img/telefone.svg" />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="assets/img/instagram.png" alt="" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/"
+            target="_blank"
+          >
+            <img src="assets/img/linkedin.png" alt="" />
+          </a>
+          <a href="https://github.com/">
+            <img src="assets/img/github.png" alt="" target="_blank" />
+          </a>
+          <a class="tooltip" data-tooltip="generico@gmail.com">
+            <img src="assets/img/email.png" alt="" />
+          </a>
+        </div>
+      </footer>
+
+      <div id="modal" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <div>
+              <h1 style="text-align-last: center; color: black; opacity: 0.6">
+                Conhecimentos
+              </h1>
+              <br />
+              <div
+                id="conhecimentos"
+                style="overflow-y: auto; max-height: 360px"
+              ></div>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
